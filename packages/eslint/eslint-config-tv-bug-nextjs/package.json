@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-tv-bug-nextjs",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/tv-bug.git",
+  "license": "MIT",
+  "private": true,
+  "main": "index.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "lint": "eslint './**/*.*js'",
+    "lint:fix": "eslint './**/*.*js' --fix"
+  },
+  "devDependencies": {
+    "eslint-config-tv-bug-base": "workspace:*"
+  }
+}

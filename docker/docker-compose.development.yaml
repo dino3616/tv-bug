@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: tv-bug-app
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile.development
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspaces/tv-bug/
+      - type: volume
+        source: pnpm-store
+        target: /workspaces/tv-bug/.pnpm-store/
+    tty: true
+
+volumes:
+  pnpm-store:
+    driver: local

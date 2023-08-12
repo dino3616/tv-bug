@@ -1,0 +1,13 @@
+{
+  "name": "@tv-bug/prettier",
+  "version": "0.1.0",
+  "repository": "https://github.com/dino3616/tv-bug.git",
+  "license": "MIT",
+  "private": true,
+  "main": "./index.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "fmt": "prettier --check .",
+    "fmt:fix": "prettier --write ."
+  }
+}
