@@ -1,8 +1,7 @@
-import { withTV } from 'tailwind-variants/transformer';
 import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-const defaultConfig: Config = {
+export const defaultConfig: Config = {
   content: [],
   theme: {
     ...defaultTheme,
@@ -14,9 +13,3 @@ const defaultConfig: Config = {
     },
   },
 };
-
-export const createConfig = (config: Config): Config =>
-  withTV({
-    ...defaultConfig,
-    ...config,
-  });
